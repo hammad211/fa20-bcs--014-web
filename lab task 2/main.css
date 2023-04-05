@@ -1,0 +1,15 @@
+.active1{
+    margin-left: 850px;
+  }
+  .image{
+      margin-right:70px;
+  }
+  .p-image{
+      background-color: azure; border: 2px solid black; margin: 10px; border-radius: 20px;
+  }
+  .p-image-button{
+      margin-left: 50px;margin-bottom: 5px; border-radius: 10px;
+  }
+  .left{
+      margin-left: 30px;
+  }
