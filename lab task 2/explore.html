@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+    <p id="display">hello my arr is</p>
+    <form>
+    <input type="text" id="hell" value="0">
+</form>
+    <button onclick="add()" >add</button>
+    <button onclick="sub()">minus</button>
+<p ></p>
+    
+
+
+    <script>
+        let  num=0;
+        let add = () =>{ 
+         num=num+1;
+        document.getElementById('hell').value=num;
+
+       };
+       let sub = () =>{ 
+        
+        if(num>0) {
+            num=num-1;
+        document.getElementById('hell').value=num;
+        document.querySelector("input").style.color="white"
+        }
+       };
+      
+//     let a=()=>{console.log("hello")
+//      document.getElementById('hell').innerHTML="hello";
+// };
+//     a();
+    
+
+
+
+
+const arr= {id:'1',id:'2'}
+
+const arr1={
+    
+    
+
+    items:[{name:'hammad', id:1},
+          {name:'hassan', id:2},
+          {name:'hadi', id:3}
+        ]
+}
+
+        document.getElementById("display").innerHTML = arr1[items.id(0)];
+
+        console.log(arr1.items[0]);
+    </script>
+    
+</body>
+</html>
