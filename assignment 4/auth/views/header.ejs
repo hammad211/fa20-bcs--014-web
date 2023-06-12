@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+   
+</head>
+<body>
+    <header>
+    <div style="background-color: rgb(37, 94, 94);" >
+    <div style="justify-content: center;display: flex; color: white;"> 
+    <h1  >Buy.Com</h1>
+  </div> 
+    <div style="display: flex;  justify-content: flex-end; padding-left: 1000px; margin-top: -30px; font-size: 20px;" >
+    <% if (!user){%>
+    
+      <a class="nav-link" href="/users/register">Register</a>
+      <a class="nav-link" href="/users/login">Login</a>
+      
+  <%}%>
+  
+  <% if (user) { %>
+  
+      <a class="nav-link" href="/users/logout">Logout</a>
+    
+    <%}%>
+  </div> 
+  </div>  
+  
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="max-height: 100px;">
+    <div class="collapse navbar-collapse" style="display: inline; word-spacing: 40px; text-indent: 15px; justify-content: center; display: flex;">
+    <ul class="navbar-nav mr-auto">
+          
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/">About</a>
+    </li>
+    <% if (user){%>
+    <li class="nav-item">
+      <a class="nav-link" href="/products">list</a>
+    </li>
+
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="/customer/cart">Cart</a>
+    </li> -->
+  
+    <%}%>
+
+    <% if (!user){%>
+      <li class="nav-item">
+        <a class="nav-link" href="/products">Admin</a>
+      </li>
+  
+      <li class="nav-item">
+        <a class="nav-link" href="/customer/login">User</a>
+      </li>
+      <%}%>
+
+
+  <li>   <h1 class="navbar-brand d-flex align-items-center" style="color: rgb(25, 91, 148); font-weight:300px ;">Sell</h1></li>
+    
+          <div style="margin-left: 1200px; " class="d-flex align-items-end">
+           
+          </ul>
+        </div>  
+        </div>
+      </nav>
+    </header>
+</body>
+</html>
